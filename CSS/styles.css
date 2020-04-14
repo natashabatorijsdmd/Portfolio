@@ -1,15 +1,45 @@
 *{
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 
+/* link styling */
+
+a:link {
+  color: #0824e0;
+  text-decoration: none;
+  font-size: large;
+}
+
+a:visited{
+  color: #0824e0;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #e2bbc2;
+  text-decoration: underline;
+}
+
+a:active{
+  color: #e2bbc2;
+  text-decoration: underline;
+}
+
+/* logo at top of page */
 header {
-    background-color: #e2bbc2;
+    background-color:#e2bbc2 ;
     padding: 20px;
     position: relative;
-
 }
 
+#logobar {
+  overflow: hidden;
+  background-color: #e2bbc2;
+}
+
+/* homepage body */
 body {
     background-color: #e2bbc2;
   }
@@ -20,40 +50,141 @@ body {
     margin: 0;
   padding: 0;
   width: 100px;
-  background-color: #f1f1f1;
   }
 
-  li a {
-    display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-  }
-
-  li a:hover {
-    background-color: #555;
-    color: white;
-  }
-
+/* styling of nav bar section */
   nav{
     position: absolute;
     top: 0;
     right: 0;
     width: 40%;
-    height: 100vh;
-    background-color: aqua;
-  
+    height: 95vh;
+    display: block;
+    margin-top: 10px;
+  padding: 8px 16px;
+  padding-left: 25px;
+  padding-top: 20px;
+  /* text */
+  text-decoration: none;
+  background-color: #fefefa;
+  font-family: Helvetica;
+  font-size: x-large;
+  word-spacing: 15px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  /* border */
+  border-bottom: solid #0824e0 2px;
+  border-left: solid #0824e0 2px;
+  border-right: none;
+  border-top: solid #0824e0 2px;
   }
+  
+  /* nav bar 'branding' dropdown */
+
+  /* overall style of dropdown page*/
+  #dropdown{
+    margin-top: 20px;
+    padding: 30px;
+    font-size: small;
+    font-weight: normal;
+    background-color: #d0db97;
+    border: solid #0824e0 0.5px;
+
+  }
+
+  /* each horizontal feature of image and text */
+  .previews{
+    font-size: small;
+    font-weight: normal;
+    display: flex;
+    margin-bottom: 25px;
+    
+  }
+ /* each image in dropdown */
+  .previewimage{
+    border: #0824e0 solid;
+    background-color: #e2bbc2;
+    border-width: 0.5px;
+    opacity: 0.8;
+
+  }
+
+  .previewimage:hover{
+    opacity: 1;
+  }
+
+  /* all text featured on right hand side of a preview */
+  .previewtextright{
+    margin-left: 35px;
+    margin-right: 0px;
+    padding-top: 25px;
+    display: inline;
+    word-spacing: normal;
+    text-align: left;
+    color: #0824e0;
+  }
+
+  /* all text featured on left hand side of a preview */
+  .previewtextleft{
+    margin-left: 0px;
+    margin-right: 35px;
+    padding-top: 25px;
+    display: inline;
+    word-spacing: normal;
+    text-align: left;
+    color: #0824e0;
+  }
+
+  /* view all button at top of dropdown menu */
+  #viewall{
+    margin-top: 60px;
+    font-size: large;
+    color: #d0db97;
+    word-spacing: normal;
+    text-align: right;
+  }
+
+
 
   .contentsection{
     width: 100%;
-    height: 50vh;
+    height: 85vh;
   }
 
+  /* landing page section */
   #section1{
-    background-color: azure;
+    background-color: #e2bbc2;
   }
 
+  /* bottom section of homepage */
   #section2{
-    background-color: blueviolet;
+    background-color: #fefefa;
   }
+
+  /* Images of how to fold a paper airplane on homepage */
+  #folding{
+    float: left;
+    padding-left: 5%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    width: 10px;
+  }
+
+  /* Text that introduces me on homepage */
+  #introlist{
+    float: left;
+    display: list-item;
+  color:#0824e0;
+  padding-left: 12%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  font-size: x-large;
+  font-family: "Helvetica";
+  line-height: 490%;
+  width: 90%;
+  letter-spacing: 4px;
+  }
+
+  
+  
