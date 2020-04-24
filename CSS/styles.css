@@ -10,6 +10,7 @@ a:link {
   color: #0824e0;
   text-decoration: none;
   font-size: large;
+  letter-spacing: 4px;
 }
 
 a:visited{
@@ -18,8 +19,8 @@ a:visited{
 }
 
 a:hover{
-  color: #e2bbc2;
-  text-decoration: underline;
+  color: #d0db97;
+  text-decoration: none;
 }
 
 a:active{
@@ -37,6 +38,7 @@ header {
 #logobar {
   overflow: hidden;
   background-color: #e2bbc2;
+  
 }
 
 /* homepage body */
@@ -57,38 +59,51 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 40%;
-    height: 95vh;
+    width: 47%;
+    height: 90vh;
     display: block;
     margin-top: 10px;
-  padding: 8px 16px;
-  padding-left: 25px;
-  padding-top: 20px;
+    padding: 40px;
   /* text */
   text-decoration: none;
   background-color: #fefefa;
   font-family: Helvetica;
   font-size: x-large;
-  word-spacing: 15px;
+  word-spacing: 20px;
   font-weight: 600;
   letter-spacing: 3px;
+  align-items: left;
   /* border */
   border-bottom: solid #0824e0 2px;
   border-left: solid #0824e0 2px;
   border-right: none;
   border-top: solid #0824e0 2px;
   }
+
+  .mainnav{
+    padding-right: 20px;
+    
+  }
+
+  .navbranding{
+    opacity: 1;
+    background-image: url(../BRANDINGhover.png)
+  }
+
+  .navbranding:hover{
+    opacity: 0;
+  }
   
   /* nav bar 'branding' dropdown */
 
   /* overall style of dropdown page*/
   #dropdown{
-    margin-top: 20px;
-    padding: 30px;
+    margin-top: 70px;
+    padding: 0px;
     font-size: small;
     font-weight: normal;
-    background-color: #d0db97;
-    border: solid #0824e0 0.5px;
+    /* background-color: #d0db97;
+    border: solid #0824e0 0.5px; */
 
   }
 
@@ -98,14 +113,17 @@ body {
     font-weight: normal;
     display: flex;
     margin-bottom: 25px;
+    padding-right: 35px;
     
   }
  /* each image in dropdown */
   .previewimage{
     border: #0824e0 solid;
     background-color: #e2bbc2;
-    border-width: 0.5px;
+    border-width: 1px;
     opacity: 0.8;
+    height: 150px;
+    width: 150px;
 
   }
 
@@ -115,31 +133,29 @@ body {
 
   /* all text featured on right hand side of a preview */
   .previewtextright{
-    margin-left: 35px;
+    margin-left: 55px;
     margin-right: 0px;
-    padding-top: 25px;
-    display: inline;
+    padding-top: 30px;
     word-spacing: normal;
     text-align: left;
-    color: #0824e0;
+    color: #e2bbc2;
   }
 
   /* all text featured on left hand side of a preview */
   .previewtextleft{
     margin-left: 0px;
-    margin-right: 35px;
-    padding-top: 25px;
-    display: inline;
+    margin-right: 55px;
+    padding-top: 30px;
     word-spacing: normal;
     text-align: left;
-    color: #0824e0;
+    color: #e2bbc2;
   }
 
   /* view all button at top of dropdown menu */
   #viewall{
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: large;
-    color: #d0db97;
+    color: #e2bbc2;
     word-spacing: normal;
     text-align: right;
   }
@@ -148,17 +164,27 @@ body {
 
   .contentsection{
     width: 100%;
-    height: 85vh;
+    
   }
 
   /* landing page section */
   #section1{
     background-color: #e2bbc2;
+    height: 80vh;
   }
 
   /* bottom section of homepage */
   #section2{
+    background-image: url(../pattern3.png);
+    background-size: contain;
+    image-rendering: auto;
     background-color: #fefefa;
+    background-repeat: repeat;
+    width: 100%;
+    height: 85vh;
+    display: block;
+    grid-row: 3;
+    padding: 0%;
   }
 
   /* Images of how to fold a paper airplane on homepage */
@@ -183,8 +209,38 @@ body {
   font-family: "Helvetica";
   line-height: 490%;
   width: 90%;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
+  width: 80%;
+  text-align: left;
   }
 
+  #home{
+    float: right;
+    width: 10%;
+    padding-top: 50px;
+    padding-right: 0%;
+  }
+
+  .pagetitle{
+    align-items: flex-end;
+  }
   
+  #section3{
+    background-color: #d0db97;
+    height: 40vh;
+    text-align: center;
+    font-size: 100px;
+    color: #e2bbc2;
+    font-family: helvetica;
+    padding-top: 15vh;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+  }
+
+  #getintouch:hover{
+    color: #0824e0;
+  }
+
+
+ 
   
