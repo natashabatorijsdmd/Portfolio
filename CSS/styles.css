@@ -4,13 +4,21 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'MainFont';
+  src: url(../hong_kong_hustle/hongkonghustle.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 /* link styling */
 
 a:link {
   color: #0824e0;
   text-decoration: none;
   font-size: large;
-  letter-spacing: 4px;
+  font-weight: bold;
 }
 
 a:visited{
@@ -30,14 +38,14 @@ a:active{
 
 /* logo at top of page */
 header {
-    background-color:#e2bbc2 ;
+    background-color:#e6c6c2 ;
     padding: 20px;
     position: relative;
 }
 
 #logobar {
   overflow: hidden;
-  background-color: #e2bbc2;
+  background-color: #e6c6c2;
   
 }
 
@@ -85,14 +93,14 @@ body {
     
   }
 
-  .navbranding{
+  /* .navbranding{
     opacity: 1;
     background-image: url(../BRANDINGhover.png)
   }
 
   .navbranding:hover{
     opacity: 0;
-  }
+  } */
   
   /* nav bar 'branding' dropdown */
 
@@ -107,6 +115,13 @@ body {
 
   }
 
+  .navBarTitle{
+    font-family: 'mainFont';
+    color: #0824e0;
+    padding-bottom: 4px;
+    font-size: 20px;
+  }
+
   /* each horizontal feature of image and text */
   .previews{
     font-size: small;
@@ -119,7 +134,7 @@ body {
  /* each image in dropdown */
   .previewimage{
     border: #0824e0 solid;
-    background-color: #e2bbc2;
+    background-color: #e6c6c2;
     border-width: 1px;
     opacity: 0.8;
     height: 150px;
@@ -138,7 +153,8 @@ body {
     padding-top: 30px;
     word-spacing: normal;
     text-align: left;
-    color: #e2bbc2;
+    font-weight: bold;
+    color: #e6c6c2;
   }
 
   /* all text featured on left hand side of a preview */
@@ -148,14 +164,16 @@ body {
     padding-top: 30px;
     word-spacing: normal;
     text-align: left;
-    color: #e2bbc2;
+    font-weight: bold;
+    color: #e6c6c2;
   }
 
   /* view all button at top of dropdown menu */
   #viewall{
     margin-top: 40px;
+    font-family: 'mainFont';
     font-size: large;
-    color: #e2bbc2;
+    color: #e6c6c2;
     word-spacing: normal;
     text-align: right;
   }
@@ -169,7 +187,7 @@ body {
 
   /* landing page section */
   #section1{
-    background-color: #e2bbc2;
+    background-color: #e6c6c2;
     height: 80vh;
   }
 
@@ -206,7 +224,8 @@ body {
   padding-bottom: 20px;
   text-decoration: none;
   font-size: x-large;
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
+  font-weight: bolder;
   line-height: 490%;
   width: 90%;
   letter-spacing: 3px;
@@ -216,22 +235,21 @@ body {
 
   #home{
     float: right;
-    width: 10%;
-    padding-top: 50px;
-    padding-right: 0%;
+    padding-top: 120px;
+    padding-right: 0px;
   }
 
   .pagetitle{
     align-items: flex-end;
   }
   
-  #section3{
+  #contactfooter{
     background-color: #d0db97;
     height: 40vh;
     text-align: center;
     font-size: 100px;
-    color: #e2bbc2;
-    font-family: helvetica;
+    color: #dba6af;
+    font-family: 'mainFont';
     padding-top: 15vh;
     letter-spacing: 5px;
     word-spacing: 10px;
@@ -242,5 +260,61 @@ body {
   }
 
 
- 
-  
+  #branding1{
+margin: 20px;
+    /* text */
+    text-decoration: none;
+    color: #0824e0;
+  font-family: Helvetica;
+  font-size: x-large;
+  word-spacing: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  align-items: left;
+  }
+
+  #about1{
+    width: 100%;
+    height: 70vh;
+    /* background-image: url(../pattern3.png); */
+    background-size: cover;
+    image-rendering: auto;
+    background-color: #e6c6c2;
+        /* text */
+        text-decoration: none;
+        color: #0824e0;
+      font-family: Helvetica;
+      font-size: x-large;
+      word-spacing: 2px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      display: flex;
+
+      }
+
+
+.paragraphText{
+  float: left;
+  font-family: Helvetica;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fefefa;
+  margin-left: 20px;
+  margin-right: 200px;
+  margin-top: 75px;
+  vertical-align: baseline;
+  letter-spacing: 5;
+  line-height: 250%;
+
+
+}
+
+#aboutPageImage{
+  padding-top: 50px;
+  float: right;
+}
+
+#aboutTextColour{
+  padding-top: 20px;
+  color: #0824e0;
+}
