@@ -6,82 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>About</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header> 
       <!-- Title of website -->
-      <div id="logobar">
-        <img src="LOGOTEST1.png" alt="ARCHETYPE DESIGNS" width="700">
+      <div class="logo">
+        <a href="index.html"> <img src="LOGOTEST1.png" alt="ARCHETYPE DESIGNS" width="700"></a>
       </div>
-      
-      <!-- navigation menu 
-  <nav class="mainnav">
-        <a href="#branding" class="navbranding"><img src="BRANDING.png" alt="BRANDING" height = "26px"></a>
-        <a href="#websites"><img src="WEBSITES.png" alt="WEBSITES" height = "26px"></a>
-        <a href="#blog"><img src="BLOG.png" alt="BLOG" height="26px"></a>
-        <a href="#contact"><img src="CONTACT.png" alt="CONTACT" height="26px"></a>
-        <a href="#home"><img src="CLOSE.png" alt="X" height="26px"></a> -->
+      <div class="burgerIconContainer"> 
+        <button class="burgerIcon" id="mobile-nav-btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </div>
+      <!-- navigation menu -->
+  <nav class="mainnav mainnav-closed">
+    <div class="navPageTitles">
+        <a href="branding.html" id="navBrandingBtn">BRANDING</a>
+        <a href="websites.html" id="navWebsitesBtn">WEBSITES</a>
+        <a href="blog.html" id="navBlogBtn">BLOG</a>
+        <a href="contact.html" id="navContactBtn">CONTACT</a>
+        <a class="closeButton" id="mobile-nav-btn-closed">X</a>
+      </div>
 
-    
-        <!-- preview drop down when branding is selected 
-        <div id="dropdown"> -->
+       
 
-          <!-- first image and text 
+        <!-- preview drop down when branding is selected -->
+        <div class="dropdown">
+
+          <!-- first image and text -->
           <div class="previews">
-            <img src="GreenBambinoLogo.png" alt = "greenbambinologo" width="150" height="150" class="previewimage"> -->
+            <img src="GreenBambinoLogo.png" alt = "greenbambinologo" width="150" height="150" class="previewimage">
 
-            <!-- <div class="previewtextright">
-            <h3>
-               <i> PROJECT ONE </i> 
+            <div class="previewtextright">
+             <!-- title  --> 
+            <h3 class="navBarTitle">
+               PRoJECT oNE
              </h3> 
+             <!-- main text -->
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
               Exercitationem deserunt eius error quod nesciunt voluptatem 
               sint consectetur asperiores
              </p> 
              </div>
-          </div> -->
+          </div>
 
-          <!-- second image and text 
+          <!-- second image and text -->
           <div class="previews">
           
             <div class="previewtextleft">
-             
-            <h3>
-               <i>PROJECT TWO</i>
+             <!-- title  --> 
+            <h3 class="navBarTitle">
+               PRoJECT TWo
              </h3> 
-          
+           
+             <!-- main text -->
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
               Exercitationem deserunt eius error quod nesciunt voluptatem 
               sint consectetur asperiores
              </p> 
             </div>
              <img src="2.png" alt = "greenbambinologo" width="150" height="150" class="previewimage">
-           </div> -->
+           </div>
 
-            <!-- third image and text 
+            <!-- third image and text -->
             <div class="previews">
             <img src="ticket3.png" alt = "greenbambinologo" width="150" height="150" class="previewimage">
 
             <div class="previewtextright">
-           
-           <h3>
-            <i>PROJECT THREE </i>
-            </i>
+           <!-- title  --> 
+           <h3 class="navBarTitle">
+            PRoJECT THREE 
+        
            </h3>
-           
+           <!-- main text -->
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
            Exercitationem deserunt eius error quod nesciunt voluptatem 
            sint consectetur asperiores
            </p>
+
+           <div id="viewall">
+            <a href="#branding"><h2>VIEW ALL</h2></a>
+          </div>  
            </div> 
          
+
+           
         </div>
 
-        <div id="viewall">
-          <h2>VIEW ALL</h2>
-        </div>   
+       
                  
-      </nav> -->
+      </nav>
+      
       
 </header>
 
@@ -105,9 +124,9 @@
             <br>
             I ALSO TINKER WITH PHOTOGRAPHY, ART, & PODCASTING IN MY SPARE TIME.
             <br>
-            <a href = 'blog.html'>IF YOU WANT TO KNOW MORE ABOUT ME, READING MY BLOG IS A GOOD PLACE TO START ... 
-            <br>
-            OR YOU COULD JUST STRIKE UP A CONVERSATION! </a>
+            <a href = 'blog.html'>IF YOU WANT TO KNOW MORE ABOUT ME, READING MY BLOG IS A GOOD PLACE TO START ... </a>
+            
+            <a href="contact.html"><br>OR YOU COULD JUST STRIKE UP A CONVERSATION! </a> 
 
         </p> 
     </div>
@@ -115,12 +134,23 @@
           <a id="aboutPageImage"><img src="ABOUTSIDE.png" alt="" width="100"></a>
           
       </section>
+    </main>
+  </section>
 
-      <section id="contactfooter" class="contentsection"><a id="getintouch"><b>GET IN TOUCH</b> </a></section>
-  </main>
+<section id="contactfooter" class="contentsection"><a href="contact.html" id="getintouch"><b>GET IN TOUCH</b> </a></section>
+</main>
 
-
-
+<script src="css/js/script.js"></script>
+<footer>
+<div class="container">
+<div class="socialMedia"> 
+  <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+ <a href="https://www.twitter.com" target="_blank"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+ <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+</div>
+<div class="copyrightInfo"></div>
+</div>
+</footer>
       
 </body>
 </html>

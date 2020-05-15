@@ -15,10 +15,7 @@
 /* link styling */
 
 a:link {
-  color: #0824e0;
   text-decoration: none;
-  font-size: large;
-  font-weight: bold;
 }
 
 a:visited{
@@ -32,26 +29,53 @@ a:hover{
 }
 
 a:active{
-  color: #e2bbc2;
+  color: #e6c6c2;
   text-decoration: underline;
 }
 
 /* logo at top of page */
-header {
-    background-color:#e6c6c2 ;
-    padding: 20px;
-    position: relative;
+header{
+  padding: 20px;
+  background-color:#e6c6c2 ;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
+  width: 100%;
 }
 
-#logobar {
+.logo {
   overflow: hidden;
   background-color: #e6c6c2;
   
+  
+}
+
+.burgerIconContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgerIcon{
+  color: #0824e0;
+  border: none;
+  background-color: transparent;
+  font-size: 55px;
+  padding-right: 30px;
+  display: block;
+  grid-area: right;
+}
+
+.burgerIcon:hover{
+  cursor: pointer;
+  font-size: 60px;
 }
 
 /* homepage body */
 body {
-    background-color: #e2bbc2;
+    background-color: #e6c6c2;
   }
 
   ul {
@@ -72,44 +96,45 @@ body {
     display: block;
     margin-top: 10px;
     padding: 40px;
-  /* text */
-  text-decoration: none;
-  background-color: #fefefa;
-  font-family: Helvetica;
-  font-size: x-large;
-  word-spacing: 20px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  align-items: left;
+    background: #fefefa;
+  /* transitions */
+
   /* border */
-  border-bottom: solid #0824e0 2px;
-  border-left: solid #0824e0 2px;
+  border: solid #0824e0 2px;
   border-right: none;
-  border-top: solid #0824e0 2px;
   }
 
-  .mainnav{
-    padding-right: 20px;
-    
+  .navPageTitles{
+    text-decoration: none;;
+    font-family: 'MainFont';
+    font-size: 23px;
+    word-spacing: 5px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    align-items: left;
   }
 
-  /* .navbranding{
-    opacity: 1;
-    background-image: url(../BRANDINGhover.png)
+  .closeButton{
+    color: #0824e0;
+    font-size: 30px;
   }
 
-  .navbranding:hover{
-    opacity: 0;
-  } */
+  .closeButton:hover{
+    cursor: pointer;
+  }
   
+  .mainnav-closed{
+    display: none;
+  }
   /* nav bar 'branding' dropdown */
 
   /* overall style of dropdown page*/
-  #dropdown{
+  .dropdown{
     margin-top: 70px;
     padding: 0px;
+    font-family: Helvetica;
     font-size: small;
-    font-weight: normal;
+    font-weight: lighter;
     /* background-color: #d0db97;
     border: solid #0824e0 0.5px; */
 
@@ -118,8 +143,13 @@ body {
   .navBarTitle{
     font-family: 'mainFont';
     color: #0824e0;
-    padding-bottom: 4px;
-    font-size: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .navBarTitle:active{
+    text-decoration: underline;
   }
 
   /* each horizontal feature of image and text */
@@ -140,10 +170,6 @@ body {
     height: 150px;
     width: 150px;
 
-  }
-
-  .previewimage:hover{
-    opacity: 1;
   }
 
   /* all text featured on right hand side of a preview */
@@ -170,19 +196,19 @@ body {
 
   /* view all button at top of dropdown menu */
   #viewall{
+    display: inline-flex;
     margin-top: 40px;
     font-family: 'mainFont';
     font-size: large;
     color: #e6c6c2;
     word-spacing: normal;
-    text-align: right;
-  }
+    float: right;
 
+  }
 
 
   .contentsection{
     width: 100%;
-    
   }
 
   /* landing page section */
@@ -193,7 +219,7 @@ body {
 
   /* bottom section of homepage */
   #section2{
-    background-image: url(../pattern3.png);
+    background-image: url(../assets/myBrand/pattern3.png);
     background-size: contain;
     image-rendering: auto;
     background-color: #fefefa;
@@ -206,11 +232,11 @@ body {
   }
 
   /* Images of how to fold a paper airplane on homepage */
-  #folding{
+  #foldingImage{
     float: left;
     padding-left: 5%;
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     width: 10px;
   }
 
@@ -233,7 +259,7 @@ body {
   text-align: left;
   }
 
-  #home{
+  #sideTitleHome{
     float: right;
     padding-top: 120px;
     padding-right: 0px;
@@ -248,15 +274,19 @@ body {
     height: 40vh;
     text-align: center;
     font-size: 100px;
-    color: #dba6af;
     font-family: 'mainFont';
     padding-top: 15vh;
     letter-spacing: 5px;
     word-spacing: 10px;
   }
 
+  #getintouch{
+    color: #dba6af;
+  }
+
   #getintouch:hover{
     color: #0824e0;
+    cursor: pointer;
   }
 
 
@@ -276,7 +306,7 @@ margin: 20px;
   #about1{
     width: 100%;
     height: 70vh;
-    /* background-image: url(../pattern3.png); */
+    /* background-image: url(..assets/myBrand/pattern3.png); */
     background-size: cover;
     image-rendering: auto;
     background-color: #e6c6c2;
@@ -318,3 +348,236 @@ margin: 20px;
   padding-top: 20px;
   color: #0824e0;
 }
+
+/* branding page */
+
+.brandingBody{
+  background-color: #e6c6c2;
+  margin-top: 100px;
+  
+}
+
+.galleryContainer{
+  display: grid;
+  width: 75%;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  grid-template-columns: auto auto auto;
+  grid-row: 1fr 1fr 1fr;
+  grid-template-areas: "left middle right"
+  "left middle right"
+  "left middle right";
+}
+
+.brandingPageTile{
+  border: #0824e0 solid 1px;
+}
+
+/* This select the img HTML element inside the div with the class of imgContainer */
+.imgContainer > img{
+  max-width: 100%;
+}
+
+.imgContainer{
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -25px;
+  cursor: pointer;
+  /* border: solid #0824e0 1px; */
+}
+
+.imgContainer :hover{
+opacity: 0.6;
+}
+
+#lowerImage{
+  margin-top: 50px;
+  margin-bottom: -25px;
+}
+
+#galleryTopImage{
+  margin-top: -25px;
+}
+
+#sideTitle{
+  display: grid;
+float: right;
+background-color: #e6c6c2;
+padding-top: 150px;
+}
+
+
+
+/* blog page */
+
+.blogBody{
+  height: 120vh;
+}
+
+.blogContainer{
+    display: grid;
+    width: 75%;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    grid-template-columns: auto auto auto auto;
+    grid-row: 1fr 1fr;
+    grid-template-areas: "left middle right"
+    "left middle right"
+}
+
+
+.blogImg{
+  display: flex;
+  max-width: 100%;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  }
+  
+  .blogImg :hover{
+  opacity: 0.
+}
+
+/* websites page */
+
+.websitesBody{
+  height: 120vh;
+
+}
+
+.carouselContainer{
+  width: 950px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 120px;
+}
+
+.websitesDescription{
+  height: auto;
+  display: flex;
+  width: 100%;
+}
+
+.carouselSlide{
+  height: 522px;
+  display: flex;
+  width: 100%;
+}
+
+#prevBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 35px;
+  color: #0824e0;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#nextBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 35px;
+  color: #0824e0;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#sideTitleWebsites{
+  display: grid;
+float: right;
+background-color: #e6c6c2;
+padding-top: 60px;
+}
+
+.websitesDescription{
+ margin-top: 30px;
+}
+
+.Title{
+  font-family: 'MainFont';
+  color: #0824e0;
+  font-size: 30px;
+}
+
+.paragraphStyle{
+  margin-top: 10px;
+  font-family: 'Helvetica';
+  color: #fefefa;
+  font-size: 20px;
+}
+
+/* footer */
+
+footer{
+  height: 100px;
+  padding-top: 15px;
+  background-color: #e6c6c2;
+}
+
+.socialMedia{
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.socialMedia > a{
+  text-decoration: none;
+  color:#fefefa;
+  transition: 0.2s color;
+}
+
+.socialMedia > a:hover{
+  color: #0824e0;
+}
+
+.copyrightInfo{
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 15px;
+  color:#fefefa;
+  text-align: center;
+}
+
+/* project page */
+
+.projectBody{
+  height: 120vh;
+}
+
+.projectCarouselContainer{
+  width: 950px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  position: relative ;
+  margin-top: 50px;
+}
+
+.projectImageContainer{
+  width: auto;
+  height: 522px;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.projectImage{
+  width: 950px;
+  height: 522px;
+  margin: auto;
+  display: flex;
+  margin-top: 120px;
+}
+
+.projectDescription{
+  width: 100%;
+  display: flex;
+}
+
+
+
+
