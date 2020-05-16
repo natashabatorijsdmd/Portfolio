@@ -212,13 +212,13 @@ body {
   }
 
   /* landing page section */
-  #section1{
+  #homeSection1{
     background-color: #e6c6c2;
     height: 80vh;
   }
 
   /* bottom section of homepage */
-  #section2{
+  #homeSection2{
     background-image: url(../assets/myBrand/pattern3.png);
     background-size: contain;
     image-rendering: auto;
@@ -519,31 +519,21 @@ padding-top: 60px;
     height: 100vh;
     width: 100vw;
     font-family: 'MainFont';
+    justify-content: center;
 }
 
 .formContainer{
-    float: right;
-    width: 40vw;
-    background-color:transparent;
-    border: #fefefa 2px;
-    border-style: dotted;
-    padding: 60px;
+    width: 70vw;
+    height: 80vh;
+    background-color: transparent;
     margin-top: 50px;
-    margin-left: 10px;
+    margin-bottom: 100px;
 }
 
-.contactContainer{
-    width: 40vw;
-    background-color:transparent;
-    border: #fefefa 2px;
-    border-style: dotted;
-    padding: 100px;
-    margin-top: 50px;
-    margin-right: 10px;
-}
-
-.contactContainer > h1 {
-  color: #0824e0;
+#planeLogo{
+  display: flex;
+  width: 80%;
+  justify-content: center;
 }
 
 .contactTitle{
@@ -568,7 +558,7 @@ padding-top: 60px;
     font-size: 18px;
     border-radius: 0px;
     border: #e6c6c2 1px solid;
-    
+    margin: 10px;
     }
 
 
@@ -602,12 +592,7 @@ border-width: 1.5px;
     color: #0824e0;
 }
 
-#planeLogo{
-  display: flex;
-  width: 100%;
-  padding-bottom: 30px;
-  padding-top: 285px;
-}
+
 
 /* footer */
 
@@ -639,6 +624,12 @@ footer{
   font-size: 15px;
   color:#fefefa;
   text-align: center;
+}
+
+.footerLogo{
+  display: block;
+  align-content: center;
+  margin: auto 0;
 }
 
 /* project page */

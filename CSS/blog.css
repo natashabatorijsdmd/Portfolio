@@ -1,0 +1,148 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MainFont';
+    src: url(../hong_kong_hustle/hongkonghustle.ttf);
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  /* link styling */
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited{
+    color: #fefefa;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #0824e0;
+    text-decoration: none;
+  }
+  
+  a:active{
+    color: #e6c6c2;
+    text-decoration: underline;
+  }
+
+  /* header */
+
+
+
+header{
+    padding: 20px;
+    background-color: #d0db97;
+    position: relative;
+    width: 100%;
+  }
+
+  .archetyping{
+    margin-top: 20px;
+    font-size: 100px;
+    color: #e6c6c2;
+    font-family: 'MainFont';
+    text-align: center;
+}
+
+.returnButton{
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    font-family: 'Helvetica';
+    color: grey;
+    text-align: center;
+}
+
+.blogMainImage{
+    margin: auto;
+}
+
+.blogMainImage > img{
+    border: #0824e0 2px solid;
+}
+  
+  /* blog post body */
+  .blogBody {
+      background-color: #d0db97;
+      height: auto;
+    width: 100%;
+    height: auto;
+    }
+  
+   /* blog content */
+    .blogContent{
+    background-color: #fefefa;
+    padding-bottom: 50px;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    }
+  
+    .blogTitle{
+        max-width: 70%;
+        font-family: 'MainFont';
+        color: #d0db97;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        padding: 50px;
+
+    }
+  
+    .blogText{
+        max-width: 60%;
+        font-family: Helvetica;
+        font-size: 20px;
+        color: grey;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: auto;
+    }
+
+    /* footer */
+
+footer{
+    height: 100px;
+    padding-top: 15px;
+    background-color: #e6c6c2;
+  }
+  
+  .socialMedia{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .socialMedia > a{
+    text-decoration: none;
+    color:#fefefa;
+    transition: 0.2s color;
+  }
+  
+  .socialMedia > a:hover{
+    color: #0824e0;
+  }
+  
+  .copyrightInfo{
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 15px;
+    color:#fefefa;
+    text-align: center;
+  }
+  
+  .footerLogo{
+    display: block;
+    align-content: center;
+    margin: auto 0;
+  }
