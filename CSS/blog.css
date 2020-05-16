@@ -11,6 +11,21 @@
     font-weight: normal;
   }
 
+  @font-face {
+    font-family: 'paragraph';
+    src: url(../hanken-grotesk-cufonfonts-webfont/HankenGrotesk-Regular.woff);
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+
+  @font-face {
+    font-family: 'blogTitle';
+    src: url(../assets/myBrand/212\ Keyboard.otf);
+    font-style: normal;
+    font-weight: normal;
+  }
+
   /* link styling */
 
 a:link {
@@ -44,29 +59,46 @@ header{
   }
 
   .archetyping{
-    margin-top: 20px;
-    font-size: 100px;
-    color: #e6c6c2;
-    font-family: 'MainFont';
+    margin-top: 50px;
     text-align: center;
+
 }
 
 .returnButton{
-    margin: auto;
     padding: 10px;
     font-size: 20px;
     background-color: transparent;
-    font-family: 'Helvetica';
+    font-family: 'Paragraph';
     color: grey;
     text-align: center;
 }
 
 .blogMainImage{
-    margin: auto;
+    display: block;
+    text-align: center;
+    margin: 50px;
 }
 
 .blogMainImage > img{
     border: #0824e0 2px solid;
+}
+
+.blogImage{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blogImage > img {
+    border: #0824e0 2px solid;
+}
+
+.imageCaption{
+    padding-top: 1px;
+        font-family: 'paragraph';
+        color: #b4b9ba;
+        font-size: 12px;
+        text-align: center;
 }
   
   /* blog post body */
@@ -79,34 +111,64 @@ header{
   
    /* blog content */
     .blogContent{
-    background-color: #fefefa;
+    background-color: #fffbf5;
     padding-bottom: 50px;
     width: 80%;
     height: fit-content;
     margin: auto;
     margin-top: 100px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     }
   
     .blogTitle{
         max-width: 70%;
-        font-family: 'MainFont';
+        font-family: 'paragraph';
         color: #d0db97;
         font-size: 30px;
         text-align: center;
         margin: auto;
-        padding: 50px;
+        padding-top: 50px;
 
+    }
+
+    .details{
+        padding-top: 5px;
+        font-family: 'paragraph';
+        letter-spacing: 2px;
+        color: #b4b9ba;
+        font-size: 12px;
+        text-align: center;
     }
   
     .blogText{
-        max-width: 60%;
-        font-family: Helvetica;
-        font-size: 20px;
-        color: grey;
+        max-width: 70%;
+        font-family: 'paragraph';
+        font-size: 17px;
+        color: #333333;
         letter-spacing: 1px;
-        text-align: center;
+        text-align: left;
         margin: auto;
+        line-height: 22.1px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+
+    .specialText{
+        font-size: 18px;
+        color: #e6c6c2;
+        text-align: left;
+        margin: auto;
+        line-height: 22.1px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .subheading{
+        letter-spacing: 3px;
+        font-size: 25px;
+        color: #6d7275;
+        text-align: center;
     }
 
     /* footer */
@@ -144,5 +206,4 @@ footer{
   .footerLogo{
     display: block;
     align-content: center;
-    margin: auto 0;
   }
