@@ -102,8 +102,35 @@
 
 
   <main>
-    <a id="sideTitle"><img src="CONTACT.png" alt="" width="100"></a>
-      <section class="websitesBody">   
+    
+      <section class="contactBody">  
+        <a id="sideTitle"><img src="CONTACT.png" alt="" width="100"></a> 
+
+        <div class="contactContainer">
+          <img id="planeLogo" src="./assets/myBrand/plane.png" alt="planeLogo">
+        <h1>
+          Phone: (+44) 7572946523
+          <br>
+          <br>
+        </h1>
+        <div class="socialMedia"> 
+          <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <a href="https://www.twitter.com" target="_blank"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+         <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> 
+      </div>
+      </div>
+
+        <div class="formContainer">
+          <h1 class="contactTitle"> Send Us A Message</h1>
+          <form action="https://formspree.io/xjvaknlw" method="POST">
+              <!-- <label>Name</label><br> -->
+              <input name="text" type="text" id="nameField" placeholder="Enter Your Name"> 
+              <input name="email" type="email" id="emailField" placeholder="Enter Your Email">
+              <textarea name="message" id="messageField" rows="10" placeholder="Enter Message"></textarea>
+              <input type="submit" id="submitButton" value="Submit">
+  
+          </form>
+      </div>
         
     </section>
 

@@ -511,6 +511,104 @@ padding-top: 60px;
   font-size: 20px;
 }
 
+/* contact page */
+
+
+.contactBody{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'MainFont';
+}
+
+.formContainer{
+    float: right;
+    width: 40vw;
+    background-color:transparent;
+    border: #fefefa 2px;
+    border-style: dotted;
+    padding: 60px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.contactContainer{
+    width: 40vw;
+    background-color:transparent;
+    border: #fefefa 2px;
+    border-style: dotted;
+    padding: 100px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.contactContainer > h1 {
+  color: #0824e0;
+}
+
+.contactTitle{
+  font-size: 50px;
+    color:#0824e0;
+    text-align: right;
+    padding-bottom: 40px;
+}
+
+.formContainer > form{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    font-size: 28px;
+    justify-content: space-around;
+    font-family: 'Helvetica'
+}
+
+.formContainer > form > input,
+.formContainer > form > textarea{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 0px;
+    border: #e6c6c2 1px solid;
+    
+    }
+
+
+.formContainer > form > input:focus,
+.formContainer > form > textarea:focus{
+border-color: #0824e0;
+border-width: 1.5px;
+}
+
+#nameField, #emailField{
+    height: 50px;
+}
+
+#messageField{
+    resize: none;
+    font-family: 'Helvetica';
+    margin-bottom: 20px;
+}
+
+#submitButton{
+    font-family: 'MainFont';
+    letter-spacing: 3px;
+    font-size: 25px;
+    background-color: #0824e0;
+    color: #d0db97;
+    transition: background-color 0.2s;
+}
+     
+#submitButton:hover{
+    background-color: #d0db97;
+    color: #0824e0;
+}
+
+#planeLogo{
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 285px;
+}
+
 /* footer */
 
 footer{
@@ -574,8 +672,10 @@ footer{
 }
 
 .projectDescription{
+  padding-top: 20px;
   width: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 
