@@ -37,12 +37,14 @@ a:active{
 header{
   padding: 20px;
   background-color:#e6c6c2 ;
-  position: relative;
+  position: fixed;
+  top: 0px;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
   grid-template-areas: "left right";
   width: 100%;
+  margin-top: none;
 }
 
 .logo {
@@ -215,6 +217,7 @@ body {
   #homeSection1{
     background-color: #e6c6c2;
     height: 80vh;
+    margin-top: 100px;
   }
 
   /* bottom section of homepage */
@@ -353,7 +356,7 @@ margin: 20px;
 
 .brandingBody{
   background-color: #e6c6c2;
-  margin-top: 100px;
+  margin-top: 200px;
   
 }
 
@@ -411,12 +414,14 @@ padding-top: 150px;
 /* blog page */
 
 .blogBody{
-  height: 120vh;
+  margin-top: 150px;
+  height: 100vh;
 }
 
 .blogContainer{
     display: grid;
     width: 75%;
+    margin-top: 50px;
     margin-left: 20px;
     margin-bottom: 50px;
     grid-template-columns: auto auto auto auto;
@@ -428,15 +433,17 @@ padding-top: 150px;
 
 .blogImg{
   display: flex;
-  max-width: 100%;
+  max-width: 198px;
+  height: 280px;
   margin-left: 8px;
   margin-right: 8px;
   margin-top: 16px;
   cursor: pointer;
   }
+
   
   .blogImg :hover{
-  opacity: 0.
+  opacity: 0;
 }
 
 /* websites page */
@@ -515,6 +522,7 @@ padding-top: 60px;
 
 
 .contactBody{
+  margin-top: 100px;
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -635,7 +643,7 @@ footer{
 /* project page */
 
 .projectBody{
-  height: 120vh;
+  height: 140vh;
 }
 
 .projectCarouselContainer{
@@ -644,7 +652,7 @@ footer{
   margin: auto;
   overflow: hidden;
   position: relative ;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .projectImageContainer{
@@ -652,6 +660,7 @@ footer{
   height: 522px;
   position: absolute;
   margin-top: 50px;
+  text-align: center;
 }
 
 .projectImage{
@@ -663,10 +672,22 @@ footer{
 }
 
 .projectDescription{
-  padding-top: 20px;
+  padding-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.returnButton{
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'MainFont';
+  color: #0824e0;
+  font-size: 30px;
+}
+
+#return:hover{
+  cursor: pointer;
 }
 
 
