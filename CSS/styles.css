@@ -93,7 +93,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 47%;
+    width: 45%;
     height: 90vh;
     display: block;
     margin-top: 10px;
@@ -140,6 +140,14 @@ body {
     /* background-color: #d0db97;
     border: solid #0824e0 0.5px; */
 
+  }
+
+  .dropdown-closed{
+    display: none;
+  }
+
+  .navPageTriggersActive{
+color: red;
   }
 
   .navBarTitle{
@@ -208,6 +216,43 @@ body {
 
   }
 
+  /* contact dropdown styling */
+
+  .contactNavImageContainer{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .contactNavText{
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    text-align: center;
+    font-family: 'MainFont';
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #d0db97;
+  }
+
+  .contactNavButton{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'MainFont';
+    font-size: 100px;
+    color: #0824e0;
+  }
+
+  #contactNavIcons{
+    color: #d0db97;
+  }
+
+  #contactNavIcons:hover{
+    color: #0824e0;
+  }
+
+  #phoneNumber{
+    margin-right: 50px;
+  }
 
   .contentsection{
     width: 100%;
@@ -418,12 +463,24 @@ padding-top: 150px;
   height: 100vh;
 }
 
+.blogDescription{
+  font-family: Helvetica;
+  color: #fefefa;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  margin-top: 50px;
+  margin-left: 25px;
+
+}
+
 .blogContainer{
     display: grid;
     width: 75%;
     margin-top: 50px;
     margin-left: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     grid-template-columns: auto auto auto auto;
     grid-row: 1fr 1fr;
     grid-template-areas: "left middle right"
@@ -435,16 +492,59 @@ padding-top: 150px;
   display: flex;
   max-width: 198px;
   height: 280px;
-  margin-left: 8px;
-  margin-right: 8px;
   margin-top: 16px;
   cursor: pointer;
   }
 
-  
-  .blogImg :hover{
-  opacity: 0;
+#blogRow2{
+  margin-top: 300px;
+  margin-bottom: 50px;
 }
+
+/* flip card code */
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: auto;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  width: 200px;
+  height: auto;
+  color:transparent;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
 
 /* websites page */
 
