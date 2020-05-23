@@ -38,6 +38,7 @@ header{
   padding: 20px;
   background-color:#e6c6c2 ;
   position: fixed;
+  z-index: 200;
   top: 0px;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -48,10 +49,9 @@ header{
 }
 
 .logo {
+  max-width: 700px;
   overflow: hidden;
   background-color: #e6c6c2;
-  
-  
 }
 
 .burgerIconContainer{
@@ -65,7 +65,7 @@ header{
   border: none;
   background-color: transparent;
   font-size: 55px;
-  padding-right: 30px;
+  margin-right: 30px;
   display: block;
   grid-area: right;
 }
@@ -91,10 +91,11 @@ body {
 /* styling of nav bar section */
   nav{
     position: absolute;
+    z-index: 5000;
     top: 0;
     right: 0;
-    width: 45%;
-    height: 90vh;
+    width: 650px;
+    height: auto;
     display: block;
     margin-top: 10px;
     padding: 40px;
@@ -107,6 +108,8 @@ body {
   }
 
   .navPageTitles{
+    color: #0824e0;
+    cursor: pointer;
     text-decoration: none;;
     font-family: 'MainFont';
     font-size: 23px;
@@ -132,7 +135,6 @@ body {
 
   /* overall style of dropdown page*/
   .dropdown{
-    margin-top: 70px;
     padding: 0px;
     font-family: Helvetica;
     font-size: small;
@@ -147,7 +149,7 @@ body {
   }
 
   .navPageTriggersActive{
-color: red;
+color: #d0db97;
   }
 
   .navBarTitle{
@@ -158,8 +160,8 @@ color: red;
     letter-spacing: 1px;
   }
 
-  .navBarTitle:active{
-    text-decoration: underline;
+  .navBarTitle:hover{
+    color: #d0db97;
   }
 
   /* each horizontal feature of image and text */
@@ -191,6 +193,7 @@ color: red;
     text-align: left;
     font-weight: bold;
     color: #e6c6c2;
+    line-height: 20px;
   }
 
   /* all text featured on left hand side of a preview */
@@ -202,18 +205,24 @@ color: red;
     text-align: left;
     font-weight: bold;
     color: #e6c6c2;
+    line-height: 20px;
   }
 
   /* view all button at top of dropdown menu */
   #viewall{
-    display: inline-flex;
-    margin-top: 40px;
+    display: block;
+    margin-top: 30px;
+   margin-bottom: 30px;
     font-family: 'mainFont';
-    font-size: large;
+    font-size: 15px;
     color: #e6c6c2;
     word-spacing: normal;
-    float: right;
+    text-align: center;
 
+  }
+
+  .viewall{
+    color: #e6c6c2;
   }
 
   /* contact dropdown styling */
@@ -234,7 +243,7 @@ color: red;
     color: #d0db97;
   }
 
-  .contactNavButton{
+  .contactNavCTA{
     margin-top: 100px;
     text-align: center;
     font-family: 'MainFont';
@@ -261,8 +270,23 @@ color: red;
   /* landing page section */
   #homeSection1{
     background-color: #e6c6c2;
-    height: 80vh;
+    height: auto;
     margin-top: 100px;
+  }
+
+  .planeLogoHomeContainer{
+  max-width: 50%;
+  max-height: 500px;
+  margin: auto auto;
+  padding-top: 100px;
+  padding-bottom: 150px;
+    }
+
+  .planeLogoHome{
+    display: none;
+    text-align: center;
+    max-width: 100%;
+    margin: auto auto;
   }
 
   /* bottom section of homepage */
@@ -273,39 +297,46 @@ color: red;
     background-color: #fefefa;
     background-repeat: repeat;
     width: 100%;
-    height: 85vh;
+    height: auto;
     display: block;
     grid-row: 3;
     padding: 0%;
   }
 
   /* Images of how to fold a paper airplane on homepage */
-  #foldingImage{
-    float: left;
-    padding-left: 5%;
-    padding-top: 60px;
-    padding-bottom: 100px;
-    width: 10px;
+  .foldingImages{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    text-align: center;
+    width: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left center right"
+  "left center center right";
+  justify-content: space-between;
+  align-content: bottom;
   }
 
-  /* Text that introduces me on homepage */
-  #introlist{
-    float: left;
-    display: list-item;
-  color:#0824e0;
-  padding-left: 12%;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  text-decoration: none;
-  font-size: x-large;
-  font-family: 'Helvetica';
-  font-weight: bolder;
-  line-height: 490%;
-  width: 90%;
-  letter-spacing: 3px;
-  width: 80%;
-  text-align: left;
+  .origami{
+    max-height: 450px;
+    margin-top: 50px;
+    opacity: 1;
+    transition: 0.2s;
+    bottom: 0;
   }
+
+  .origami:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .origami5{
+    margin-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
 
   #sideTitleHome{
     float: right;
@@ -335,20 +366,6 @@ color: red;
   #getintouch:hover{
     color: #0824e0;
     cursor: pointer;
-  }
-
-
-  #branding1{
-margin: 20px;
-    /* text */
-    text-decoration: none;
-    color: #0824e0;
-  font-family: Helvetica;
-  font-size: x-large;
-  word-spacing: 10px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  align-items: left;
   }
 
   #about1{
@@ -402,7 +419,7 @@ margin: 20px;
 .brandingBody{
   background-color: #e6c6c2;
   margin-top: 200px;
-  
+  height: auto;
 }
 
 .galleryContainer{
@@ -422,9 +439,10 @@ margin: 20px;
 }
 
 /* This select the img HTML element inside the div with the class of imgContainer */
-.imgContainer > img{
+.imgContainer img{
   max-width: 100%;
 }
+
 
 .imgContainer{
   margin-left: 15px;
@@ -451,7 +469,8 @@ opacity: 0.6;
   display: grid;
 float: right;
 background-color: #e6c6c2;
-padding-top: 150px;
+padding-top: auto;
+padding-bottom: auto;
 }
 
 
@@ -460,7 +479,7 @@ padding-top: 150px;
 
 .blogBody{
   margin-top: 150px;
-  height: 100vh;
+  height: auto;
 }
 
 .blogDescription{
@@ -469,80 +488,36 @@ padding-top: 150px;
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 25px;
-  width: 74%;
+  width: 64%;
   margin-top: 50px;
   margin-left: 25px;
+  margin-bottom: 50px;
 
 }
 
 .blogContainer{
-    display: grid;
-    width: 75%;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-bottom: 100px;
-    grid-template-columns: auto auto auto auto;
-    grid-row: 1fr 1fr;
-    grid-template-areas: "left middle right"
-    "left middle right"
+  height: auto;
+  width: 65%;
+  margin: 50px 25px;
 }
-
 
 .blogImg{
-  display: flex;
-  max-width: 198px;
-  height: 280px;
-  margin-top: 16px;
-  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.2s;
   }
 
-#blogRow2{
-  margin-top: 300px;
-  margin-bottom: 50px;
-}
+  .blogImg:hover{
+    opacity: 0.7;
+  }
 
-/* flip card code */
+  #sideTitleBlog{
+    display: grid;
+    float: right;
+    background-color: transparent;
+    padding-top: 100px;
+  }
 
-.flip-card {
-  background-color: transparent;
-  width: 200px;
-  height: auto;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.3s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-  transition: 1s;
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 200px;
-  height: auto;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  width: 200px;
-  height: auto;
-  color:transparent;
-}
-
-.flip-card-back {
-  color: white;
-  transform: rotateY(180deg);
-}
 
 
 
@@ -558,6 +533,7 @@ padding-top: 150px;
   margin: auto;
   overflow: hidden;
   position: relative;
+  z-index: 10;
   margin-top: 120px;
 }
 
@@ -568,7 +544,7 @@ padding-top: 150px;
 }
 
 .carouselSlide{
-  height: 522px;
+  height: auto;
   display: flex;
   width: 100%;
 }
@@ -705,9 +681,9 @@ border-width: 1.5px;
 /* footer */
 
 footer{
-  height: 100px;
   padding-top: 15px;
   background-color: #e6c6c2;
+  padding-bottom: 20px;
 }
 
 .socialMedia{
@@ -791,5 +767,219 @@ footer{
 }
 
 
+@media only screen and (max-width: 1100px){
+  .origami{
+    max-height: 350px;
+  }
+
+}
+
+@media only screen and (max-width: 850px){  
+
+  #sideTitle{
+    display: none;
+  }
+
+  #sideTitleWebsites{
+    display: none;
+  }
+  
+
+  .foldingImages{
+    display: grid;
+    text-align: center;
+    width: 90%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left right"
+  "left right"
+  "left right";
+  justify-content: space-between;
+  align-content: bottom;
+  }
+
+.logo{
+ max-width: 500px;
+}
+
+.burgerIcon{
+  font-size: 40px;
+}
+
+#contactfooter{
+  height: auto;
+  font-size: 75px;
+  font-family: 'mainFont';
+  padding: 50px;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+}
+
+/* branding page */
+
+.galleryContainer{
+  margin: 50px auto;
+  width: 95%;
+}
+
+.imgContainer{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: -15px;
+  cursor: pointer;
+  /* border: solid #0824e0 1px; */
+}
+
+
+#lowerImage{
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+
+#galleryTopImage{
+  margin-bottom: -15px;
+}
+
+/* websites page */
+
+.carouselContainer{
+  width: 580px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  margin-top: 120px;
+}
+
+/* blog page */
+
+.blogContainer{
+  width: 90%;
+  margin: auto 20px;
+}
+
+.blogImg{
+  margin: auto 15px;
+  text-align: center;
+}
+
+.blogDescription{
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#sideTitleBlog{
+  display: none;
+}
+
+}
+
+@media only screen and (max-width: 650px){
+  .logo{
+    max-width: 400px;
+  }
+
+  nav{
+    width: 100vw;
+  }
+
+  .imgContainer{
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 0px;
+  }
+  
+  
+  #lowerImage{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  #galleryTopImage{
+    margin-top: 0px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 480px){  
+
+.logo{
+  max-width: 320px;
+}
+
+.burgerIcon{
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+#origami{
+  max-width: 300px;
+}
+
+#homeSection1{
+  height: 50vh;
+}
+
+.galleryContainer{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+}
+
+.imgContainer{
+
+  max-width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  cursor: pointer;
+  /* border: solid #0824e0 1px; */
+}
+
+#galleryTopImage{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+.blogContainer{
+  width: 95%;
+  margin: auto auto;
+}
+
+.blogImg{
+  margin: auto auto;
+}
+
+.blogDescription{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#sideTitle{
+  display: block;
+}
+
+.contactTitle{
+  font-size: 30px;
+}
+
+
+}
+
+
+@media only screen and (max-width: 380px){  
+  .logo{
+    max-width: 250px;
+  }
+  }
 
 

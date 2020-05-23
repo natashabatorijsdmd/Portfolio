@@ -174,7 +174,6 @@ header{
     /* footer */
 
 footer{
-    height: 100px;
     padding-top: 15px;
     background-color: #e6c6c2;
   }
@@ -202,8 +201,9 @@ footer{
     color:#fefefa;
     text-align: center;
   }
-  
+
   .footerLogo{
-    display: block;
-    align-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
