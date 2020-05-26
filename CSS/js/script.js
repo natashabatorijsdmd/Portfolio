@@ -14,6 +14,7 @@ mobileNavBTNclose.addEventListener('click', function () {
 
 
 
+
 //nav bar 
 
 var navBrandingBtn = document.querySelector('#navBrandingBtn')
